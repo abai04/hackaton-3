@@ -4,11 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #carousel-card{
     border-radius: 20px;
     padding: 7px;
     border: 3px solid orange;
 }
+
 
 /* navbar start */
 .nav_head {
@@ -136,4 +138,11 @@
     padding: 8px 20px;
     font-size: 16px;
     line-height: 24px;
+}
+.most-relevant{
+    box-shadow: 0px 5px 20px gray;
+    transition: 0.2s;
+}
+.most-relevant:hover{
+    box-shadow: none;
 }
