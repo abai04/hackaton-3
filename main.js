@@ -33,6 +33,20 @@ let saveEditBtn = document.querySelector(".save-edit-btn")
 let editId = null
 let editModal = document.querySelector("#editModal")
 
+//переменные для search
+let inpSearch = document.querySelector(".search-inp")
+let searchBtn = document.querySelector(".search-btn")
+let searchValue = ""
+//переменные для filtration
+let catalogueBtns = document.querySelectorAll(".btn_li li")
+let btnAll = document.querySelector("#all")
+let btnPizza = document.querySelector("#pizza")
+let btnDrinks = document.querySelector("#drinks")
+let btnSnacks = document.querySelector("#snacks")
+let btnSauces = document.querySelector("#sauces")
+let btnOther = document.querySelector("#other")
+let filterValue = "All"
+
 addBtn.addEventListener("click", ()=>{
     if (!titleInp.value.trim() || !descInp.value.trim() || !priceInp.value.trim() || !imgInp.value.trim()) {
         alert("Заполните все поля")
@@ -53,7 +67,8 @@ addBtn.addEventListener("click", ()=>{
 //read
 async function render() {
     try{
-        let res = await fetch(API)
+        let res = filterValue !== "All" ? await fetch(`${API}?q=${searchValue}&category=${filterValue}`) :
+         await fetch(`${API}?q=${searchValue}`)
         let data = await res.json()
         catalogueBlock.innerHTML = ""
         data.forEach(product =>{
@@ -121,3 +136,53 @@ async function saveChanges(editedProduct) {
     console.log(error);
   }
 }
+//search
+inpSearch.addEventListener('input', (e) => {
+  searchValue = e.target.value;
+});
+
+searchBtn.addEventListener('click', () => {
+  render();
+});
+
+//filter
+catalogueBtns.forEach(btn =>{
+    btn.addEventListener("click", (e) =>{
+        console.log(e.target.innerText);
+        filterValue = e.target.innerText
+        changeColorFilterBtn()
+        render()
+    })
+})
+function changeColorFilterBtn(){
+    catalogueBtns.forEach(btn=>{
+        if (filterValue === btn.innerText){
+            btn.style.color = "orange"
+        }
+        else{
+            btn.style.backgroundColor = "white"
+            btn.style.color = "black"
+        }
+    })
+}
+
+// allFilteredBtns.forEach(btn =>{
+//   btn.addEventListener("click", (e)=>{
+//     console.log(e);
+//     filterValue = e.target.innerText
+//     changeColorFilterBtn()
+//     renderProducts()
+//   })
+// })
+// function changeColorFilterBtn() {
+//   allFilteredBtns.forEach(btn => {
+//     if (filterValue === btn.innerText) {
+//     btn.style.backgroundColor = "green"
+//   }
+//   else{
+//     btn.style.backgroundColor = "white"
+//     btn.style.color = "black"
+//   }
+//   });
+  
+// }
