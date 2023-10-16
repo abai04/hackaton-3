@@ -30,6 +30,8 @@ let priceEdit = document.querySelector(".price-edit")
 let imgEdit = document.querySelector(".img-edit")
 let categoryEdit = document.querySelector(".category-edit")
 let saveEditBtn = document.querySelector(".save-edit-btn")
+let editId = null
+let editModal = document.querySelector("#editModal")
 
 addBtn.addEventListener("click", ()=>{
     if (!titleInp.value.trim() || !descInp.value.trim() || !priceInp.value.trim() || !imgInp.value.trim()) {
@@ -62,7 +64,7 @@ async function render() {
             <p class="card-text">${product.description}</p>
             <p>${product.price}сом</p>
         <a href="#" onclick="deleteProduct(${product.id})" class="btn btn-secondary">Delete</a>
-        <a href="#" onclick="editProduct()" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-warning">Edit</a>
+        <a href="#" onclick="editProduct(${product.id})" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-warning">Edit</a>
       </div>
     </div>`;
         })
@@ -79,3 +81,43 @@ async function deleteProduct(id) {
 }
 
 //edit
+async function editProduct(id) {
+  try {
+    let res = await fetch(`${API}/${id}`);
+    let data = await res.json();
+    titleEdit.value = data.title
+    descEdit.value = data.description
+    priceEdit.value = data.price
+    imgEdit.value = data.img
+    categoryEdit.value = data.category
+    editId = id
+  } catch (error) {
+    console.log(error);
+  }
+}
+saveEditBtn.addEventListener('click', () => {
+  let editedProduct = {
+    title: titleEdit.value,
+    description: descEdit.value,
+    price: priceEdit.value,
+    img: imgEdit.value,
+    category: categoryEdit.value
+  };
+  saveChanges(editedProduct);
+});
+async function saveChanges(editedProduct) {
+  try {
+    await fetch(`${API}/${editId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(editedProduct),
+    });
+    let modal = bootstrap.Modal.getInstance(editModal);
+    modal.hide();
+    render();
+  } catch (error) {
+    console.log(error);
+  }
+}
