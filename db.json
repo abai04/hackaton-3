@@ -1,5 +1,28 @@
 {
-   "products":[
-    
-   ]
+  "products": [
+    {
+      "title": "фывфы",
+      "description": "das",
+      "price": "dsadas",
+      "img": "dsadas",
+      "category": "pizza",
+      "id": 2
+    },
+    {
+      "title": "фывфы",
+      "description": "das",
+      "price": "dsadas",
+      "img": "dsadas",
+      "category": "snacks",
+      "id": 3
+    },
+    {
+      "title": "asds",
+      "description": "sd",
+      "price": "fg",
+      "img": "r4rg",
+      "category": "yjyj",
+      "id": 5
+    }
+  ]
 }
