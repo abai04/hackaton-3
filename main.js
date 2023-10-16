@@ -79,3 +79,20 @@ async function deleteProduct(id) {
 }
 
 //edit
+async function editProduct(id) {
+  try {
+    let res = await fetch(`${API}/${id}`);
+    let data = await res.json();
+    titleEdit
+    // inpEditCategory.value = data.category;
+    // inpEditColor.value = data.color;
+    // inpEditDescription.value = data.description;
+    // inpEditImage.value = data.imageUrl;
+    // inpEditPrice.value = data.price;
+    // inpEditSize.value = data.size;
+    // inpEditTitle.value = data.title;
+    // editId = id;
+  } catch (error) {
+    console.log(error);
+  }
+}
