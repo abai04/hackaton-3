@@ -45,7 +45,7 @@ let btnDrinks = document.querySelector("#drinks")
 let btnSnacks = document.querySelector("#snacks")
 let btnSauces = document.querySelector("#sauces")
 let btnOther = document.querySelector("#other")
-let filterValue = "All"
+let filterValue = "Все"
 
 addBtn.addEventListener("click", ()=>{
     if (!titleInp.value.trim() || !descInp.value.trim() || !priceInp.value.trim() || !imgInp.value.trim()) {
@@ -67,7 +67,7 @@ addBtn.addEventListener("click", ()=>{
 //read
 async function render() {
     try{
-        let res = filterValue !== "All" ? await fetch(`${API}?q=${searchValue}&category=${filterValue}`) :
+        let res = filterValue !== "Все" ? await fetch(`${API}?q=${searchValue}&category=${filterValue}`) :
          await fetch(`${API}?q=${searchValue}`)
         let data = await res.json()
         catalogueBlock.innerHTML = ""

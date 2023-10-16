@@ -1,68 +1,68 @@
 {
   "products": [
     {
-      "title": "aa",
-      "description": "das",
-      "price": "dsadas",
-      "img": "dsadas",
-      "category": "pizza",
+      "title": "Сырная",
+      "description": "Сырная пицца",
+      "price": "250",
+      "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/e2393e247dc64ecbbf23c82243c0a399_366x366.webp",
+      "category": "Пицца",
+      "id": 1
+    },
+    {
+      "title": "Морс",
+      "description": "Вишневый Морс",
+      "price": "100",
+      "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/b5f113ca1255415a89e6c2b542484a27_366x366.webp",
+      "category": "Другие товары",
       "id": 2
     },
     {
-      "title": "фывфы",
-      "description": "das",
-      "price": "dsadas",
-      "img": "dsadas",
-      "category": "snacks",
+      "title": "Цыпленок ранч",
+      "description": "пицца с соусом ранч и цыпленком",
+      "price": "450",
+      "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/00dbf810cbed40dea76351fbc5377643_760x760.webp",
+      "category": "Пицца",
       "id": 3
     },
     {
-      "title": "asds",
-      "description": "sd",
-      "price": "fg",
-      "img": "r4rg",
-      "category": "yjyj",
+      "title": "Латте",
+      "description": "Когда хочется нежную молочную пенку, на помощь приходит классический латте",
+      "price": "100",
+      "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/af8e68f81761479b9e745f4592e67ef3_366x366.webp",
+      "category": "Напитки",
+      "id": 4
+    },
+    {
+      "title": "Додстер",
+      "description": "Горячая закуска с цыплёнком, моцареллой, томатами и соусом ранч в тонкой пшеничной лепешке",
+      "price": "150",
+      "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/0bd7315279e34250b85f45c2526c1b65_366x366.webp",
+      "category": "Закуски",
       "id": 5
     },
     {
-      "title": "asdasd",
-      "description": "asd",
-      "price": "asdasd",
-      "img": "sadsad",
-      "category": "asdsad",
+      "title": "Рулетики пепперони и сыром",
+      "description": "Микс горячих рулетиков с сырным соусом: 8 штук с пепперони и моцареллой, 8 штук с моцареллой",
+      "price": "200",
+      "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/87cbd47c9dd2437d8a1d4a38ade50040_366x366.webp",
+      "category": "Закуски",
       "id": 6
     },
     {
-      "title": "xcv",
-      "description": "cxv",
-      "price": "dsfdsf",
-      "img": "dscxvfd",
-      "category": "gdffcx",
+      "title": "Салат Цезарь",
+      "description": "Цыпленок, смесь сыров чеддер и пармезан, томаты черри, пшеничные гренки, листья салата айсберг, итальянские травы и соус Цезарь",
+      "price": "150",
+      "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/58c7527b6da14585b9d59e4508791f28_366x366.webp",
+      "category": "Закуски",
       "id": 7
     },
     {
-      "title": "xcvdf",
-      "description": "sd",
-      "price": "xcsf",
-      "img": "dsdcx",
-      "category": "cdfsdcxc",
+      "title": "Соус Сырный",
+      "description": "Наш фирменный сырный соус",
+      "price": "100",
+      "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/cc8c95f544b741299865505fd5d0196e_366x366.webp",
+      "category": "Соусы",
       "id": 8
-    },
-    {
-      "title": "sad",
-      "description": "asdsad",
-      "price": "sadas",
-      "img": "dsadas",
-      "category": "пицца",
-      "id": 9
-    },
-    {
-      "title": "sdfds",
-      "description": "fdsf",
-      "price": "dsfdsf",
-      "img": "dsfdsf",
-      "category": "Пицца",
-      "id": 10
     }
   ]
 }
