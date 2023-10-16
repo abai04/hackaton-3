@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 100px;
+}
+/* navbar start */
+.nav_head {
+    width: 100%;
+    border-bottom: 1px solid rgb(243, 243, 247);
+    z-index: 101;
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+    align-items: center;
+}
+
+.nav_left {
+    cursor: pointer;
+    display: flex;
+    gap: 26px;
+    
+}
+
+.nav_left :hover {
+    color: orange;
+}
+.nav_s {
+    display: inline-block;
+    position: absolute;
+    background: rgb(255, 105, 0);
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+.nav_right {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.nav_right a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_right a:hover {
+    color: orange;
+}
+
+/* navbar end */
+/* header start*/
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.head_left h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.head_left p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.head_right {
+    display: flex;
+    align-items: center;
+}
+.right_icon {
+    margin-right: 20px;
+}
+
+.head_right p {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.head_right p:hover {
+    color: orange;
+}
+
+.btn_head{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: rgb(243, 243, 247);
+    color: rgb(92, 99, 112);
+    height: 40px;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+.btn_head :hover {
+    color: black;
+}
+/* header end */
+
+.catalog_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_li {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.btn_basket {
+    background-color: orange;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    height: 40px;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contacts h1 {
+    font-size: 36px;
+    font-family: Dodo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+}
+
+#contact_city{
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.inp_check{
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    
+}
+#inp_ch{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact_right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_contact_1{
+    background-color: rgb(255, 240, 230);
+    color: rgb(209, 87, 0);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin-right: 44px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.right_contact_1 :hover {
+    background-color: orange;
+}
+
+.right_contact_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(243, 243, 247);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.right_contact_2 p:hover{
+    color: orangered;
+}
+
+.right_contact_2 a:hover{
+    color: orangered;
+}
