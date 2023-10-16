@@ -57,6 +57,10 @@
     color: orange;
 }
 
+.nav_icon a {
+    cursor: pointer;
+}
+
 /* navbar end */
 /* header start*/
 .header {

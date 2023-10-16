@@ -149,3 +149,45 @@
 .most-relevant:hover{
     box-shadow: none;
 }
+
+/* footer */
+footer{
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+}
+.footer_start {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 53px 113px
+}
+
+.footer h4, p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.footer_end {
+    margin: 53px 113px
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+}
+
+.footer_icon img {
+    width: 200px;
+}
+.footer_info {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_contact {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+/* footer */
